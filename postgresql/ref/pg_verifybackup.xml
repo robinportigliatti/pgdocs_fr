@@ -179,8 +179,8 @@
      <term><option>--format=<replaceable class="parameter">format</replaceable></option></term>
      <listitem>
       <para>
-       Specifies the format of the backup. <replaceable>format</replaceable>
-       can be one of the following:
+       Spécifie le format de la sauvegarde. <replaceable>format</replaceable>
+       peut être l'un des suivants :
 
        <variablelist>
         <varlistentry>
@@ -188,8 +188,8 @@
          <term><literal>plain</literal></term>
          <listitem>
           <para>
-           Backup consists of plain files with the same layout as the
-           source server's data directory and tablespaces.
+           La sauvegarde se compose de fichiers simples avec la même disposition que le
+           répertoire de données et les tablespaces du serveur source.
           </para>
          </listitem>
         </varlistentry>
@@ -199,13 +199,13 @@
          <term><literal>tar</literal></term>
          <listitem>
           <para>
-           Backup consists of tar files, which  may be compressed.  A valid
-           backup includes the main data directory in a file named
-           <filename>base.tar</filename>, the WAL files in
-           <filename>pg_wal.tar</filename>, and separate tar files for
-           each tablespace, named after the tablespace's OID. If the backup
-           is compressed, the relevant compression extension is added to the
-           end of each file name.
+           La sauvegarde se compose de fichiers tar, qui peuvent être compressés.
+           Une sauvegarde valide inclut le répertoire de données principal dans un fichier nommé
+           <filename>base.tar</filename>, les fichiers WAL dans
+           <filename>pg_wal.tar</filename> et des fichiers tar distincts pour
+           chaque tablespace, nommés d'après l'OID de ce tablespace. Si la sauvegarde
+           est compressée, l'extension de compression correspondante est ajoutée à la
+           fin de chaque nom de fichier.
           </para>
           </listitem>
         </varlistentry>
